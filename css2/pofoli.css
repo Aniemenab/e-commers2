@@ -1,0 +1,289 @@
+/* master style*/
+
+* {
+    margin: 0px;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header a {
+    color: white;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+li {
+    list-style-type: none;
+}
+
+.comot {
+    clear: both;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+/*porfolio style*/
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.content-wrapper {
+    background-color: white;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+    width: auto;
+}
+
+.portfolio-img-background {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+
+/*needs to be more specfifc with selector*/
+
+.img-text-wrapper {
+    width: 100%;
+}
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    color: transparent;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-align: center !important;
+}
+
+.img-text-wrapper:hover .subtitle {
+    color: #db5660;
+    font-weight: 600;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+
+/*=============================================
+=            footer            =
+=============================================*/
+
+.section_footer {
+    width: 100%;
+    float: left;
+    background-color: #272222;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.mail_section {
+    width: 100%;
+    float: left;
+}
+
+.footer-logo {
+    float: left;
+    font-size: 12pt;
+    color: #fdfefe;
+}
+
+.mail_section li {
+    float: left;
+    font-size: 12pt;
+    color: #fdfefe;
+    padding-right: 35px;
+}
+
+.footer_section_2 {
+    width: 100%;
+    float: left;
+    padding-top: 20px;
+}
+
+.social_icon ul {
+    width: 200px;
+    display: flex;
+    margin-left: -4rem;
+}
+
+.social_icon i {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+
+.social_icon ul:nth-child(1) {
+    color: #db5660;
+}
+
+.shop_text {
+    width: 100%;
+    float: left;
+    font-size: 28px;
+    color: #ebebeb;
+}
+
+.dummy_text {
+    width: 100%;
+    float: left;
+    font-size: 12pt;
+    color: #ffffff;
+    margin-left: 0px;
+    line-height: 25px;
+}
+
+.image-icon {
+    width: 100%;
+    float: left;
+    padding-top: 6px;
+}
+
+.pet_text {
+    font-size: 12pt;
+    color: #ffffff;
+    padding-left: 16px;
+    display: flex;
+    top: -26px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.adderess_text {
+    width: 100%;
+    float: left;
+    font-size: 28px;
+    color: #ebebeb;
+}
+
+.copyright {
+    width: 100%;
+    float: left;
+    font-size: 12pt;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0px;
+    background-color: #ff4e5b;
+    font-family: Poppins;
+}
+
+.copyright a {
+    color: #ffffff;
+}
+
+.copyright a:hover {
+    color: #000;
+}
+
+.map_text {
+    padding-left: 15px;
+}
+
+.delivery_text {
+    width: 100%;
+    float: left;
+    font-size: 17px;
+    color: #ffffff;
+}
+
+.delivery_text ul {
+    margin-left: -2.3rem;
+}
+
+.delivery_text li {
+    margin-top: 0.3rem;
+}
+
+.enter_email {
+    border: 1px solid #000;
+    color: #000000;
+    width: 100%;
+    height: 44px;
+    font-size: 14px;
+    padding: 20px;
+}
+
+.subscribr_bt {
+    width: 80%;
+    float: right;
+    background-color: #ff4e5b;
+    font-size: 13pt;
+    height: 50px;
+    color: #ffffff;
+}
+
+.about_main {
+    width: 100%;
+    float: left;
+    padding-bottom: 30px;
+}
+
+.header_main {
+    width: 100%;
+    height: auto;
+    background: #0c0116;
+}
+
+
+/*=====  End of footer  ======*/
+
+@media screen and (max-width:700px) {
+    /*porfolio style*/
+    .portfolio-items-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:480px) {
+    /*porfolio style*/
+    .portfolio-items-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 414px) {}

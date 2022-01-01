@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
+ 2) font-family: 'Poppins', sans-serif;
+ ----------------------------------------*****/
+
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(animate.min.css);
+@import url(normalize.css);
+@import url(meanmenu.css);
+@import url(owl.carousel.min.css);
+@import url(slick.css);
+@import url(jquery-ui.css);
+@import url(nice-select.css);
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+
+* {
+    box-sizing: border-box !important;
+    transition: ease all 0.5s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.btn {
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ :focus {
+    outline: 0;
+}
+
+.paddind_bottom_0 {
+    padding-bottom: 0 !important;
+}
+
+.btn-custom {
+    margin-top: 20px;
+    background-color: transparent !important;
+    border: 2px solid #ddd;
+    padding: 12px 40px;
+    font-size: 16px;
+}
+
+.lead {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767676;
+    margin: 0;
+    padding: 0;
+}
+
+.form-control:focus {
+    border-color: #ffffff !important;
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+}
+
+.header_section a {
+    text-decoration: none !important;
+    list-style: none;
+}
+
+.logo {
+    width: 100px;
+    height: 90px;
+}
+
+.logo h1 {
+    font-size: 2.6rem;
+    transition: .3s;
+}
+
+.logo h1:hover {
+    color: #db5660;
+}
+
+.navbar-form input {
+    border: none !important;
+}
+
+.badge {
+    font-weight: 500;
+}
+
+blockquote {
+    margin: 20px 0 20px;
+    padding: 30px;
+}
+
+button {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.full {
+    float: left;
+    width: 100%;
+}
+
+.layout_padding {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.header_section {
+    width: 100%;
+    float: left;
+    background-image: url(../images/banner.png);
+    height: auto;
+    padding: 20px 0px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.padding_0 {
+    width: 100%;
+    float: left;
+}
+
+.mens_taital {
+    width: 100%;
+    float: left;
+    color: #908d92;
+    font-size: 14pt;
+}
+
+.mens_taital_2 {
+    width: 100%;
+    float: left;
+    color: #908d92;
+    font-size: 14pt;
+    margin-top: 150px;
+}
+
+.page_no {
+    width: 28%;
+    /* margin: 0 auto; */
+    text-align: center;
+    color: #ffffff;
+    border: 2px solid #8d8791;
+    border-radius: 30px;
+    margin-top: 150px;
+    padding-bottom: 10px;
+    display: inline-block;
+    padding-top: 12px;
+    margin-left: 30px;
+}
+
+.bg-light {
+    background-color: transparent !important;
+}
+
+.navbar-nav {
+    width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 14pt;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #db5660;
+}
+
+#myBtn:hover {
+    color: #db5660;
+    cursor: pointer;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.9rem;
+    padding-left: 1.6rem;
+}
+
+.main-last {
+    margin-left: -3rem;
+    display: flex;
+}
+
+.last {
+    padding-left: 30px !important;
+}
+
+.banner_text {
+    width: 100%;
+    float: left;
+    font-size: 30pt;
+    color: #db5660;
+}
+
+.mens_text {
+    width: 100%;
+    float: left;
+    font-size: 39pt;
+    color: #fdfcfc;
+    line-height: 40px;
+}
+
+.lorem_text {
+    width: 100%;
+    float: left;
+    font-size: 13pt;
+    color: #fefefe;
+    margin-left: 0px;
+}
+
+.buy_bt {
+    width: 32%;
+    height: 50px;
+    color: #ffffff;
+    background-color: #ff4e5b;
+    color: #ffffff;
+    font-size: 16pt;
+}
+
+.more_bt {
+    width: 32%;
+    height: 50px;
+    color: #ffffff;
+    background-color: #ffffff;
+    color: #ff4e5b;
+    font-size: 16pt;
+    margin-left: 25px;
+}
+
+.banner_taital {
+    width: 100%;
+    float: left;
+    margin-top: 85px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner,
+.carousel,
+.carousel-item,
+.container,
+.fill {
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+
+.slide-wrapper {
+    display: inline;
+}
+
+.slide-wrapper .container {
+    padding: 0;
+}
+
+
+/*------------------------------ vertical bootstrap slider----------------------------*/
+
+.carousel-inner>.carousel-item.carousel-item-next,
+.carousel-inner>.carousel-item.active.carousel-item-right {
+    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+    top: 0;
+}
+
+.carousel-inner>.carousel-item.carousel-item-prev,
+.carousel-inner>.carousel-item.active.carousel-item-left {
+    transform: translate3d(0, -100%, 0);
+    -webkit-transform: translate3d(0, -100%, 0);
+    -moz-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    -o-transform: translate3d(0, -100%, 0);
+    top: 0;
+}
+
+.carousel-inner>.carousel-item.next.carousel-item-left,
+.carousel-inner>.carousel-item.carousel-item-prev.carousel-item-right,
+.carousel-inner>.carousel-item.active {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    ;
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    top: 0;
+}
+
+
+/*------------------------------- vertical carousel indicators ------------------------------*/
+
+.carousel-indicators {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 20px;
+    right: -55px;
+    left: auto;
+    width: auto;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.carousel-indicators li {
+    display: block;
+    margin-bottom: 5px;
+    border: 1px solid #00a199;
+    margin-bottom: 5px;
+}
+
+.carousel-indicators li.active {
+    margin-bottom: 5px;
+    background: #00a199;
+}
