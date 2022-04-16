@@ -22,6 +22,7 @@
 #myBtn {
     width: 250px;
     color: white;
+    background-color: transparent !important;
     border: none;
     margin-left: -.9rem;
 }
